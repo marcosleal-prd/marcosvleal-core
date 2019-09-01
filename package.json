@@ -16,7 +16,12 @@
 		"typescript"
 	],
 	"author": "Marcos V. Leal <marcosv.lealferreira@gmail.com> (https://github.com/marcosv-lealferreira)",
-	"license": "ISC",
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://github.com/marcosv-lealferreira/marcosvleal-core/blob/master/LICENSE-MIT"
+		}
+	],
 	"bugs": {
 		"url": "https://github.com/marcosv-lealferreira/marcosvleal-core/issues"
 	},
