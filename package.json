@@ -1,0 +1,28 @@
+{
+	"name": "@marcosvleal/core",
+	"version": "1.0.0",
+	"description": "Pacote de teste para deploy no npm.",
+	"main": "./dist/main.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/marcosv-lealferreira/marcosvleal-core.git"
+	},
+	"keywords": [
+		"npm",
+		"marcosvleal",
+		"typescript"
+	],
+	"author": "Marcos V. Leal <marcosv.lealferreira@gmail.com> (https://github.com/marcosv-lealferreira)",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/marcosv-lealferreira/marcosvleal-core/issues"
+	},
+	"homepage": "https://github.com/marcosv-lealferreira/marcosvleal-core#readme",
+	"devDependencies": {
+		"tslint": "^5.19.0",
+		"typescript": "^3.6.2"
+	}
+}
