@@ -43,5 +43,5 @@ import { stringTransform } from '@marcosvleal/core';
 
 const str = 'MARCOS v. leal';
 
-stringTransform.toUppercase(str); // Saída: Marcos V. Leal
+stringTransform.toCapitalize(str); // Saída: Marcos V. Leal
 ```
