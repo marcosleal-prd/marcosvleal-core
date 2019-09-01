@@ -16,6 +16,6 @@
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true
 	},
-	"types": ["node", "aws-sdk"],
-	"exclude": ["node_modules"]
+	"include": ["src"],
+	"exclude": ["node_modules", "*.d.ts"]
 }

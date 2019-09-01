@@ -2,9 +2,21 @@
 	"name": "@marcosvleal/core",
 	"version": "1.0.0",
 	"description": "Pacote de teste para deploy no npm.",
-	"main": "./dist/main.js",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist/**/*"
+	],
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"lint": "tslint '*.ts'",
+		"format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+		"build": "tsc",
+		"prepare": "npm run build",
+		"prepublishOnly": "npm test && npm run lint",
+		"preversion": "npm run lint",
+		"version": "npm run format && git add -A src",
+		"postversion": "git push && git push --tags"
 	},
 	"repository": {
 		"type": "git",
@@ -27,6 +39,7 @@
 	},
 	"homepage": "https://github.com/marcosv-lealferreira/marcosvleal-core#readme",
 	"devDependencies": {
+		"prettier": "^1.18.2",
 		"tslint": "^5.19.0",
 		"typescript": "^3.6.2"
 	}
